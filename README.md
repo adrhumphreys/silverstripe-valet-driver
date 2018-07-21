@@ -14,3 +14,9 @@ location ~ \.php$ {
 ```
 
 Be sure to do a "valet restart" once you've added those parameters to put them into effect.
+
+If you're using something like debug bar you'll need to increase the buffers e.g.:
+```
+  fastcgi_buffers 64 64k;
+  fastcgi_buffer_size 128k;
+```
